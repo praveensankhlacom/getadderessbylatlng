@@ -16,7 +16,7 @@ function setlocation(txt) {
             position.coords
             let lat = position.coords.latitude
             let longi = position.coords.longitude
-            let url = `https://apis.mapmyindia.com/advancedmaps/v1/560e76f00e788bd6f147373941a7a684/rev_geocode?lat=${lat}&lng=${longi}`
+            let url = `https://apis.mapmyindia.com/advancedmaps/v1/<YOUR LICENCE KEY>/rev_geocode?lat=${lat}&lng=${longi}`
             
             const response = await fetch(url);
             var data = await response.json();
